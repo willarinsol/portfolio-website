@@ -347,21 +347,7 @@ a {
   width: 100%;
 }
 
-.btn-header-cta {
-  background: transparent;
-  border: 1px solid rgba(197, 168, 128, 0.2);
-  padding: 10px 22px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: var(--transition-smooth);
-}
 
-.btn-header-cta:hover {
-  background: var(--accent-2);
-  color: #000;
-  border-color: var(--accent-2);
-}
 
 /* ==========================================================================
    HERO SECTION DESIGN & DECORATION ITEMS
@@ -388,36 +374,7 @@ a {
   z-index: 5;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(197, 168, 128, 0.04);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  color: var(--accent-1);
-  border: 1px solid rgba(197, 168, 128, 0.08);
-  margin-bottom: 30px;
-}
 
-.badge-dot {
-  width: 6px;
-  height: 6px;
-  background-color: var(--accent-1);
-  border-radius: 50%;
-  box-shadow: 0 0 8px var(--accent-1);
-}
-
-.animate-pulse {
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { transform: scale(0.9); opacity: 0.6; }
-  50% { transform: scale(1.25); opacity: 1; }
-  100% { transform: scale(0.9); opacity: 0.6; }
-}
 
 .hero-title {
   font-size: clamp(2.8rem, 6.5vw, 5.2rem);
@@ -466,16 +423,7 @@ a {
   animation: float-y 2.2s infinite ease-in-out;
 }
 
-.btn-secondary {
-  border: 1px solid rgba(197, 168, 128, 0.15);
-  background: transparent;
-  color: var(--text-primary);
-}
 
-.btn-secondary:hover {
-  background: rgba(197, 168, 128, 0.05);
-  border-color: rgba(197, 168, 128, 0.4);
-}
 
 .scroll-indicator {
   position: absolute;
@@ -653,24 +601,7 @@ a {
   border: 1px solid rgba(197, 168, 128, 0.08);
 }
 
-.btn-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  border-bottom: 1.5px solid var(--accent-1);
-  padding-bottom: 4px;
-}
 
-.btn-link i {
-  transition: var(--transition-fast);
-}
-
-.btn-link:hover i {
-  transform: translateX(6px);
-}
 
 /* Project Image Parallax & Container Framing */
 .project-media-wrapper {
@@ -751,185 +682,11 @@ a {
 }
 
 /* ==========================================================================
-   ABOUT & CONTACT COMBINED
-   ========================================================================== */
-.about-contact-section {
-  padding: 160px 10% 80px 10%;
-  position: relative;
-  z-index: 5;
-}
-
-.split-container {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 100px;
-  margin-bottom: 120px;
-}
-
-.about-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-text {
-  font-size: 1.15rem;
-  margin-bottom: 50px;
-  font-family: var(--font-body);
-}
-
-.skills-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.skills-title {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--text-secondary);
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-
-.skill-item {
-  background: rgba(197, 168, 128, 0.01);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  transition: var(--transition-smooth);
-}
-
-.skill-item:hover {
-  background: rgba(197, 168, 128, 0.03);
-  border-color: var(--accent-1);
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px var(--accent-1-glow);
-}
-
-.skill-icon {
-  font-size: 1.4rem;
-  color: var(--accent-1);
-}
-
-.skill-name {
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-/* Contact Form Box Styling */
-.contact-column {
-  display: flex;
-  align-items: center;
-}
-
-.glassmorphism {
-  background: var(--card-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--card-border);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-}
-
-.contact-box {
-  width: 100%;
-  padding: 50px;
-  border-radius: 16px;
-}
-
-.contact-box-title {
-  font-size: 2rem;
-  margin-top: 10px;
-  margin-bottom: 16px;
-}
-
-.contact-box-desc {
-  margin-bottom: 40px;
-  font-size: 0.95rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.form-group {
-  position: relative;
-  width: 100%;
-}
-
-.form-input {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(197, 168, 128, 0.15);
-  padding: 10px 0;
-  font-size: 1rem;
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  outline: none;
-  transition: var(--transition-fast);
-}
-
-/* Floating label behavior */
-.form-label {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  font-size: 1rem;
-  color: var(--text-secondary);
-  pointer-events: none;
-  transition: var(--transition-fast);
-}
-
-.form-input:focus ~ .form-label,
-.form-input:not(:placeholder-shown) ~ .form-label {
-  top: -16px;
-  font-size: 0.75rem;
-  color: var(--accent-1);
-}
-
-.form-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 1.5px;
-  background: var(--accent-1);
-  transition: var(--transition-smooth);
-}
-
-.form-input:focus ~ .form-line {
-  width: 100%;
-}
-
-.text-area {
-  resize: none;
-}
-
-.btn-submit {
-  width: 100%;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  padding: 18px;
-}
-
-/* ==========================================================================
    FOOTER
    ========================================================================== */
 .footer {
   border-top: 1px solid rgba(197, 168, 128, 0.08);
-  padding-top: 40px;
+  padding: 60px 10% 60px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1000,10 +757,7 @@ a {
   .project-card.reverse .project-info, .project-card.reverse .project-media-wrapper {
     grid-column: 1;
   }
-  .split-container {
-    grid-template-columns: 1fr;
-    gap: 80px;
-  }
+
   .header {
     padding: 20px 4%;
   }
@@ -1022,14 +776,8 @@ a {
   .hero-section {
     padding: 0 6%;
   }
-  .work-section, .about-contact-section {
+  .work-section {
     padding: 100px 6%;
-  }
-  .contact-box {
-    padding: 30px;
-  }
-  .skills-grid {
-    grid-template-columns: 1fr;
   }
   .footer {
     flex-direction: column;
