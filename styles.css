@@ -374,6 +374,77 @@ a {
   z-index: 5;
 }
 
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+  z-index: 5;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-frame {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  background-color: var(--card-bg);
+}
+
+.hero-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-image-frame:hover .hero-profile-img {
+  transform: scale(1.05);
+}
+
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 60%, rgba(12, 11, 10, 0.4));
+  pointer-events: none;
+}
+
+.hero-image-badge {
+  position: absolute;
+  bottom: 20px;
+  right: -20px;
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border-active);
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.badge-tag {
+  font-family: var(--font-headings);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-1);
+  letter-spacing: 0.15em;
+}
+
 
 
 .hero-title {
@@ -750,6 +821,23 @@ a {
    RESPONSIVE DESIGN / MEDIA QUERIES
    ========================================================================== */
 @media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .hero-image-wrapper {
+    order: -1; /* Place image on top on smaller screens */
+  }
+  .hero-image-frame {
+    width: 280px;
+    height: 365px;
+  }
+  .hero-image-badge {
+    right: 0px;
+  }
+
   .project-card, .project-card.reverse {
     grid-template-columns: 1fr;
     gap: 40px;

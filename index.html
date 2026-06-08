@@ -20,14 +20,12 @@
 </head>
 
 <body>
-
-  <!-- Custom Cursor with internal VIEW label -->
   <div class="custom-cursor" id="customCursor">
     <span class="cursor-text" id="cursorText"></span>
   </div>
   <div class="custom-cursor-glow" id="customCursorGlow"></div>
 
-  <!-- Background Decorative Grid & Blobs -->
+
   <div class="grid-overlay"></div>
   <div class="floating-blobs-container">
     <div class="blob blob-1 parallax-bg" data-speed="-0.15"></div>
@@ -35,7 +33,6 @@
     <div class="blob blob-3 parallax-bg" data-speed="-0.08"></div>
   </div>
 
-  <!-- Header / Navigation -->
   <header class="header">
     <a href="#" class="logo">
       <span class="logo-dot"></span>
@@ -47,7 +44,6 @@
     </nav>
   </header>
 
-  <!-- Large Scrolling Marquee behind page contents -->
   <div class="bg-scroll-marquee" id="marqueeLayer1">
     <div class="marquee-inner">CREATIVE GALLERY EXPLORATION VISUAL DESIGN PHOTOGRAPHY FINE ART </div>
   </div>
@@ -60,19 +56,32 @@
 
     <!-- Section 1: Hero Section -->
     <section id="hero" class="hero-section">
-      <div class="hero-content">
-        <h1 class="hero-title reveal-fade-delay-1">
-          Meet <br>
-          <span class="serif-text">Will Diether Arinsol.</span>
-        </h1>
-        <p class="hero-description reveal-fade-delay-2">
-          A casual visual designer, photographer, adding a touch of myself into my own designs.
-        </p>
-        <div class="hero-actions reveal-fade-delay-3">
-          <a href="#work" class="btn btn-primary magnetic-target" id="heroPrimaryBtn">
-            <span>View Gallery</span>
-            <i class="fa-solid fa-arrow-down-long btn-icon-scroll"></i>
-          </a>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title reveal-fade-delay-1">
+            Meet <br>
+            <span class="serif-text">Will Diether Arinsol.</span>
+          </h1>
+          <p class="hero-description reveal-fade-delay-2">
+            A casual visual designer, photographer, adding a touch of myself into my own designs.
+          </p>
+          <div class="hero-actions reveal-fade-delay-3">
+            <a href="#work" class="btn btn-primary magnetic-target" id="heroPrimaryBtn">
+              <span>View Gallery</span>
+              <i class="fa-solid fa-arrow-down-long btn-icon-scroll"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper reveal-fade-delay-2">
+          <div class="hero-image-frame">
+            <img src="assets/SelfPhoto1.png" alt="Will Diether Arinsol Profile" class="hero-profile-img">
+            <div class="hero-image-overlay"></div>
+          </div>
+          <!-- Subtle decorative tag for profile -->
+          <div class="hero-image-badge">
+            <span class="badge-tag">DESIGNER // PHOTOGRAPHER</span>
+          </div>
         </div>
       </div>
 
@@ -97,7 +106,7 @@
     <section id="work" class="work-section">
       <div class="section-header">
         <div class="section-tag">01 // VISUAL WORK</div>
-        <h2 class="section-title">Selected Creative Works</h2>
+        <h2 class="section-title">Selected Photo Works</h2>
       </div>
 
       <div class="projects-list">
@@ -177,7 +186,7 @@
           </div>
           <div class="project-media-wrapper cursor-view-trigger">
             <div class="project-media parallax-media" data-speed="0.08">
-              <img src="assets/MIL1 (2).jpg" alt="Silence & Shape Architecture Photo" class="project-img">
+              <img src="assets/MIL1 (3).jpg" alt="Silence & Shape Architecture Photo" class="project-img">
             </div>
             <!-- Dynamic floating sub-element inside project card -->
             <div class="project-float-badge parallax-badge" data-speed="0.18">
@@ -194,7 +203,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p class="footer-copyright">&copy; All developed by Will Arinsol.</p>
-      </div>
+
     </footer>
 
   </main>
