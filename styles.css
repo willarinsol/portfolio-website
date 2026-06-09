@@ -2,22 +2,22 @@
    DESIGN SYSTEM & CSS CUSTOM PROPERTIES
    ========================================================================== */
 :root {
-  /* Artistic Warm Obsidian Palette */
-  --bg-color: #0c0b0a;
-  --bg-grid: rgba(197, 168, 128, 0.02);
-  --text-primary: #f5f2eb;               /* Soft warm white */
-  --text-secondary: #9c978f;             /* Muted grey-beige */
+  /* Premium Monochrome Black & White Palette */
+  --bg-color: #080808;                   /* Premium deep black */
+  --bg-grid: rgba(255, 255, 255, 0.015);  /* Ultra-subtle neutral grid lines */
+  --text-primary: #ffffff;               /* Pure brilliant white */
+  --text-secondary: #a0a0a0;             /* Clean neutral silver-grey */
   
-  /* Muted Luxury Bronze & Cream Hues */
-  --accent-1: hsl(35, 33%, 64%);         /* Soft Muted Bronze (#c5a880) */
-  --accent-2: hsl(33, 41%, 91%);         /* Luxurious Soft Cream (#f3e8db) */
-  --accent-3: hsl(30, 15%, 57%);         /* Desert Clay Accent (#a39281) */
+  /* Monochrome Shades & White Accents */
+  --accent-1: hsl(0, 0%, 100%);          /* Crisp pure white */
+  --accent-2: hsl(0, 0%, 93%);           /* Soft greyish white */
+  --accent-3: hsl(0, 0%, 55%);           /* Mid-tone neutral grey */
   
-  --accent-1-glow: rgba(197, 168, 128, 0.12);
-  --accent-2-glow: rgba(243, 232, 219, 0.08);
-  --card-bg: rgba(18, 17, 16, 0.85);
-  --card-border: rgba(197, 168, 128, 0.08);
-  --card-border-active: rgba(197, 168, 128, 0.25);
+  --accent-1-glow: rgba(255, 255, 255, 0.08);
+  --accent-2-glow: rgba(255, 255, 255, 0.04);
+  --card-bg: rgba(15, 15, 15, 0.85);      /* Dark glassmorphic background */
+  --card-border: rgba(255, 255, 255, 0.06); /* Clean subtle white border */
+  --card-border-active: rgba(255, 255, 255, 0.22); /* Brighter border highlight */
   
   /* Typography */
   --font-headings: 'Syne', sans-serif;
@@ -61,7 +61,7 @@ body {
   background: var(--bg-color);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(197, 168, 128, 0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -137,7 +137,7 @@ a {
 .custom-cursor-glow {
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(197, 168, 128, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -162,7 +162,7 @@ a {
   width: 54px;
   height: 54px;
   border-color: var(--accent-1);
-  background-color: rgba(197, 168, 128, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* 2. Project Card Hover (VIEW badge) */
@@ -177,7 +177,7 @@ a {
 .custom-cursor-glow.view-state {
   width: 90px;
   height: 90px;
-  border-color: rgba(243, 232, 219, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
   background-color: transparent;
 }
 
@@ -291,7 +291,7 @@ a {
   z-index: 1000;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(197, 168, 128, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .logo {
@@ -317,7 +317,7 @@ a {
   background: rgba(255, 255, 255, 0.01);
   padding: 10px 28px;
   border-radius: 30px;
-  border: 1px solid rgba(197, 168, 128, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .nav-link {
@@ -558,14 +558,14 @@ a {
 .circle-outline {
   width: 150px;
   height: 150px;
-  border: 1px dashed rgba(197, 168, 128, 0.25);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
 
 .square-outline {
   width: 90px;
   height: 90px;
-  border: 1px solid rgba(197, 168, 128, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   transform: rotate(45deg);
 }
 
@@ -664,12 +664,12 @@ a {
 }
 
 .tag {
-  background: rgba(197, 168, 128, 0.03);
+  background: rgba(255, 255, 255, 0.03);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.8rem;
   color: var(--text-secondary);
-  border: 1px solid rgba(197, 168, 128, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 
