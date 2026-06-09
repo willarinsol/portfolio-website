@@ -228,3 +228,35 @@ function updateActiveNavHighlight() {
     }
   });
 }
+
+/* ==========================================================================
+   EXPERIENCE SECTION INTERACTIVE TABS
+   ========================================================================== */
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const targetId = btn.dataset.tab;
+    
+    // Deactivate all buttons
+    tabBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    // Fade out and hide all panels
+    tabPanels.forEach(panel => {
+      panel.classList.remove('show');
+      panel.classList.remove('active');
+    });
+    
+    // Show and fade in target panel
+    const targetPanel = document.getElementById(targetId);
+    if (targetPanel) {
+      targetPanel.classList.add('active');
+      // Trigger a brief reflow so that opacity/transform transition plays smoothly
+      void targetPanel.offsetWidth;
+      targetPanel.classList.add('show');
+    }
+  });
+});
+
